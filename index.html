@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Welcome AI & ML Batch 2026-27</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+    <img src="welcome.png" class="logo">
+
+    <h1>WELCOME</h1>
+
+    <h2>AI & ML Batch 2026-27</h2>
+
+    <p>Enter your details to receive your personalized AI Welcome Message</p>
+
+    <form id="studentForm">
+
+        <input
+        type="text"
+        id="roll"
+        placeholder="Enter Roll Number"
+        required>
+
+        <input
+        type="text"
+        id="name"
+        placeholder="Enter Student Name"
+        required>
+
+        <button type="submit">
+
+            Generate Welcome
+
+        </button>
+
+    </form>
+
+</div>
+
+<div id="welcomeCard" class="hidden">
+
+    <h2 id="studentName"></h2>
+
+    <p id="studentRoll"></p>
+
+    <div id="message"></div>
+
+    <button onclick="location.reload()">Next Student</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
