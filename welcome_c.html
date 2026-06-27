@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Welcome AI & ML Students</title>
+
+<style>
+
+.qr-section{
+    margin-top:35px;
+    text-align:center;
+}
+
+.qr-section h2{
+    color:white;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.qr-section img{
+    width:180px;
+    height:180px;
+    background:white;
+    padding:12px;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(0,255,255,.6);
+    transition:0.4s;
+}
+
+.qr-section img:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 40px cyan;
+}
+
+.qr-section p{
+    margin-top:15px;
+    font-size:18px;
+    color:white;
+    opacity:0.9;
+}
+
+body{
+
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+
+background:linear-gradient(-45deg,#001F3F,#004AAD,#00B4D8,#4361EE);
+
+background-size:400% 400%;
+
+animation:bg 12s ease infinite;
+
+overflow:hidden;
+
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+.container{
+
+width:90%;
+max-width:700px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(15px);
+
+padding:45px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 15px 40px rgba(0,0,0,.3);
+
+color:white;
+
+}
+
+h1{
+
+font-size:38px;
+
+margin-bottom:15px;
+
+}
+
+.subtitle{
+
+font-size:20px;
+
+margin-bottom:35px;
+
+opacity:.9;
+
+}
+
+.message{
+
+font-size:28px;
+
+font-weight:bold;
+
+line-height:1.5;
+
+min-height:160px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:20px;
+
+animation:fade .5s;
+
+}
+
+@keyframes fade{
+
+from{opacity:0;transform:translateY(15px);}
+to{opacity:1;transform:translateY(0);}
+
+}
+
+button{
+
+margin-top:20px;
+
+padding:15px 35px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:40px;
+
+cursor:pointer;
+
+background:white;
+
+color:#004AAD;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+background:#FFD60A;
+
+color:black;
+
+}
+
+.footer{
+
+margin-top:30px;
+
+font-size:16px;
+
+opacity:.85;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🤖 Welcome AI & ML Students</h1>
+
+<div class="subtitle">
+Second Year Batch 2026–27
+</div>
+
+<div class="message" id="message"></div>
+
+<button onclick="newMessage()">
+✨ Show Another Message
+</button>
+
+<div class="qr-section">
+
+    <h2>📱 Scan for Another AI Welcome Message</h2>
+
+    <img src="C:\Users\Student\Downloads\qr_code.png" alt="QR Code">
+
+    <p>Scan this QR code to revisit the AI Welcome Page anytime!</p>
+
+</div>
+</script>
+
+</body>
+</html>
