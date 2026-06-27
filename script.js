@@ -22,3 +22,26 @@ const messages = [
 
 // Continue until 100 messages...
 ];
+const form=document.getElementById("studentForm");
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const roll=document.getElementById("roll").value;
+
+const name=document.getElementById("name").value;
+
+const random=Math.floor(Math.random()*messages.length);
+
+document.querySelector(".container").style.display="none";
+
+document.getElementById("welcomeCard").style.display="block";
+
+document.getElementById("studentName").innerHTML="🎉 Welcome "+name;
+
+document.getElementById("studentRoll").innerHTML="Roll No : "+roll;
+
+document.getElementById("message").innerHTML=messages[random];
+
+});
